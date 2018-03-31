@@ -1,4 +1,8 @@
 ( function($) {
+    $(window).scroll(function(){
+    $(".arrow_down").css("opacity", 1 - $(window).scrollTop() / 250); 
+  //250 is fade pixels
+  });
   
   $(document).ready(function() {
     
